@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SchoolWeb Platform</title>
+<!-- custom-theme -->
+<meta name="viewport" 
+content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type"
+ content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+<link rel="stylesheet" href="css/jquery.gallery.css">
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<link href="//fonts.googleapis.com/css?family=Handlee"
+ rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+ rel='stylesheet' type='text/css'>
+<style>
+.menubar-holder {margin:0px;padding:0px;
+background-color:#fa3d03;color:white;position:relative;top:0px;left:0px;}
+
+.menubar-holder > div{display:inline-block;background-color:orange;
+color:white;width:200px;line-height:35px;
+}
+.dropdown {border:solid #fff 2px;position:absolute;
+left:0px;top:100px;z-index:100000px;
+}
+.menubar-dropdown {border:solid #fff 2px;position:relative;
+left:50px;height:200px;z-index:10000px;
+}
+</style>
+</head>
+	
+<body>
+<script src="js/jquery.vide.min.js"></script>
+<!-- header -->
+	<div class="w3_agile_header" style="z-index:-1;">
+		<div class="container">
+			<div class="w3_agile_header_left">
+				<p>School website platform</p>
+			</div>
+			<div class="w3_agile_header_right">
+				<ul>
+					<li><a href="#small-dialog" class="play-icon popup-with-zoom-anim">Login</a></li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i> +(234) 1234 454 343</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="w3_navigation">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="w3_navigation_pos">
+						<h1 style="margin-left:-44px;"><a href="index.html">
+						<span>Education</span><i>
+						 Legacy
+						</i></a></h1>
+					</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" 
+				id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--miranda">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item menu__item--current">
+							<a href="index.html" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item"><a href="" 
+							class="scroll menu__link">
+							About </a></li>
+							<li class="menu__item"><a href="" 
+							class="scroll menu__link">Teachers</a>
+							</li>
+							<li class="menu__item"><a href="" 
+							class="scroll menu__link">Profile</a></li>
+							<li class="menu__item"><a href="" 
+							class="scroll menu__link">Gallery</a></li>
+							<li class="menu__item"><a href="" 
+							class="scroll menu__link">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+</div>
+	
+			
+</div>
+
+
+
+
+</div>
+
+
+
+<!-- //header -->
+<!-- pop-up-box -->
+	<div id="small-dialog" class="mfp-hide w3ls_small_dialog wthree_pop">
+		<h3>LOGIN</h3>		
+		<div class="agileits_modal_body">
+			<form action="#" method="post">
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="text" name="Name" placeholder="User Name" required="">
+				</div>
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-key" aria-hidden="true"></i>
+					<input type="password" name="Password" placeholder="Password" required="">
+				</div>
+				<div class="agile_remember">
+					<div class="agile_remember_left">
+						<div class="check">
+							<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>remember me</label>
+						</div>
+					</div>
+					<div class="agile_remember_right">
+						<a href="#">Forgot Password?</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<input type="submit" value="login">
+			</form>
+			<h5>Don't have an account? <a href="#small-dialog1" class="play-icon popup-with-zoom-anim">Sign Up</a></h5>
+		</div>
+	</div>
+	<div id="small-dialog1" class="mfp-hide w3ls_small_dialog wthree_pop">
+		<h3>Sign Up</h3>		
+		<div class="agileits_modal_body">
+			<form action="#" method="post">
+				<h4>Profile information :</h4>
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="text" name="Name" placeholder="First Name" required="">
+				</div>
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="text" name="Name" placeholder="Last Name" required="">
+				</div>
+				<div class="agileinfo_subscribe">
+					<div class="check">
+						<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>subscribe to newsletter</label>
+					</div>
+				</div>
+				<h4>Login information :</h4>
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<input type="email" name="Email" placeholder="Email" required="">
+				</div>
+				<div class="agileits_w3layouts_user agileits_w3layouts_user_agileits">
+					<i class="fa fa-key" aria-hidden="true"></i>
+					<input type="password" name="Password" placeholder="Password" required="">
+				</div>
+				<div class="agileits_w3layouts_user">
+					<i class="fa fa-key" aria-hidden="true"></i>
+					<input type="password" name="Password" placeholder="Confirm Password" required="">
+				</div>
+				<div class="agileinfo_subscribe">
+					<div class="check">
+						<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>i accept the terms and conditions</label>
+					</div>
+				</div>
+				<input type="submit" value="Register">
+			</form>
+			<h5>Already a member <a href="#small-dialog" class="play-icon popup-with-zoom-anim">Sign In</a></h5>
+		</div>
+	</div>
+<!-- //pop-up-box -->
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function() {
+	$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+																	
+	});
+</script>
+<!-- banner -->
+	<div data-vide-bg="video/nursery">
+		<div class="center-container">
+			<div class="container">
+				<div class="w3_agile_banner_info">
+					<p class="w3_agileits_banner_para"><span>
+					School website platform</span></p>
+					<div class="agileits_w3layouts_header">
+						<h2 class="test2">child care homes for <i>happy families</i></h2>
+					</div>
+					<p class="w3_elit_para">
+Looking into school options can feel like trying to sort threads in a tapestry. 
+. Terms like montessori, magnet or parochial might send you on a tangent search just to get some definitions. There are difficult decisions to make when finding the right school without the added confusion of different types of schools. That is why we compiled some of the research for you.
+					</p>
+					<div class="agile_more">
+						<a href="#" class="btn btn-3 btn-3e icon-arrow-right" 
+						data-toggle="modal" data-target="#myModal">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- bootstrap-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+Basic					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="w3_modal_body_left">
+							<img src="images/new/slide4.jpg" alt=" " class="img-responsive" />
+						</div>
+						<div class="w3_modal_body_right">
+							<h4>
+							
+	The Ultimate Guide to Schools Across The country						
+							
+</h4>
+							<p>Everything is woven 
+							together and jumbled around 
+							in ways that takes a lot of research to parse							
+							
+Almost every type of school can be sorted into the public or private category 
+based on its funding. Public schools receive their funding from the government
+ and private schools receive funding anywhere else. 					
+							<i>" 
+								
+While most schools can 
+ fall into these two categories, the standard public vs. private school
+ breakdown scarcely touches the wide array of schools you can find.									
+								</i>
+Terms like montessori, magnet or parochial might send you
+ on a tangent search just to get some definitions. There 
+ are difficult decisions to make when finding the right school without 
+the added confusion of different types of schools.					
+								</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+<!-- //bootstrap-pop-up -->
+<!-- banner-bottom -->
+	<div id="about" class="banner-bottom">
+		<div class="container">
+			<h3>a <span class="w3_child">c</span>
+			<span class="w3_child1">h</span>
+			<span class="w3_child2">i</span>
+			<span class="w3_child3">l</span>
+			<span class="w3_child4">d</span>
+			's life is like a piece of paper on
+			which every person leaves a mark</h3>
+			<p class="w3_agile_elit">
+Parents must usually submit a separate application 
+to enroll a child in a charter school.
+			</p>
+			<div class="agile_banner_bottom_grids">
+				<div class="col-md-3 agile_banner_bottom_grid">
+					<div class="view view-first">
+						<img src="images/new/b4.png" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h5>  Kindergerten </h5>
+							<p>
+They promote higher level cognitive and social learning,  
+ like private schools, spaces are often limited.							
+							</p>
+						</div>
+					</div>
+					<div class="agile_banner_bottom_grid_pos">
+						<h4>Drawing</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agile_banner_bottom_grid">
+					<div class="view view-first">
+						<img src="images/new/b3.png" alt=" " 
+						class="img-responsive" height=640px />
+						<div class="mask">
+							<h5 class="agileits_w3layouts1">Basic</h5>
+							<p>
+	Chartering allows the school to run autonomously of the existing
+	public school system,				</p>
+						</div>
+					</div>
+					<div class="agile_banner_bottom_grid_pos">
+						<h4 class="agileits_w3layouts1">Learning</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agile_banner_bottom_grid">
+					<div class="view view-first">
+						<img src="images/new/b1.png" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h5 class="agileits_w3layouts2">Primary </h5>
+							<p>
+							
+				Magnet schools specialize in certain areas such as technology,
+				science or the arts. 
+							</p>
+						</div>
+					</div>
+					<div class="agile_banner_bottom_grid_pos">
+						<h4 class="agileits_w3layouts2">Learning</h4>
+					</div>
+				</div>
+				<div class="col-md-3 agile_banner_bottom_grid">
+					<div class="view view-first">
+						<img src="images/new/b2.png" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h5 class="agileits_w3layouts3">Secondary</h5>
+							<p>
+							
+Many public school districts are creating more options 
+for their students by opening virtual options. 
+							
+							</p>
+						</div>
+					</div>
+					<div class="agile_banner_bottom_grid_pos">
+						<h4 class="agileits_w3layouts3">Learning</h4>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //banner-bottom -->
+<!-- programs -->
+	<div id="programs" class="programs">
+		<div class="container">
+			<h3 class="w3_agileits_head">
+			<span class="w3_child">O</span>
+			<span class="w3_child1">u</span>
+			<span class="w3_child4">r</span> Programs</h3>
+			<p class="w3_agile_elit">
+	<h3 class="w3_agileits_head">
+	
+	We are truly meeting our students where they need their teachers to
+ be in their educational journey,
+	Programs</h3>		
+			
+			</p>
+			<div class="agile_banner_bottom_grids">
+				<div id="verticalTab">
+
+
+
+
+
+
+
+					<div class="resp-tabs-container">
+						<div class="w3layouts_vertical_tab">
+							
+						</div>
+						<div class="w3layouts_vertical_tab">
+						
+						</div>
+						<div class="w3layouts_vertical_tab">
+							
+						</div>
+						<div class="w3layouts_vertical_tab">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //programs -->
+
+<!-- book -->
+<embed src="asset1/index.html" 
+
+type="text/html"
+title="External Content"
+style="width:100%;height:500px;"
+/>
+
+
+
+
+
+
+<!-- //team -->
+<!-- stats -->
+	<div class="stats">
+		<div class="container">
+			<div class="col-md-3 w3layouts_stats_grid">
+				<i class="fa fa-male w3_agile_i" aria-hidden="true"></i>
+				<p class="counter">2314+</p>
+				<h4>Students</h4>
+				<div class="agile_stats_grid w3ls_stats_grid">
+					<i></i>
+				</div>
+			</div>
+			<div class="col-md-3 w3layouts_stats_grid">
+				<i class="fa fa-flask w3_agile_i1" aria-hidden="true"></i>
+				<p class="counter">1344+</p>
+				<h4>Labs</h4>
+				<div class="agile_stats_grid w3ls_stats_grid1">
+					<i></i>
+				</div>
+			</div>
+			<div class="col-md-3 w3layouts_stats_grid">
+				<i class="fa fa-cloud w3_agile_i2" aria-hidden="true"></i>
+				<p class="counter">4563+</p>
+				<h4>Classes</h4>
+				<div class="agile_stats_grid w3ls_stats_grid2">
+					<i></i>
+				</div>
+			</div>
+			<div class="col-md-3 w3layouts_stats_grid">
+				<i class="fa fa-graduation-cap w3_agile_i3" aria-hidden="true"></i>
+				<p class="counter">1257+</p>
+				<h4>Team</h4>
+				<div class="agile_stats_grid w3ls_stats_grid3">
+					<i></i>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //stats -->
+<!-- events -->
+	
+<!-- //testimonials -->
+<!-- work -->
+	<div id="work" class="work">
+		<div class="container">
+			<h3 class="w3_agileits_head">Our School
+			<span class="w3_child">W</span>
+			<span class="w3_child1">o</span>
+			<span class="w3_child4">r</span>
+			<span class="w3_child2">k</span>
+			<span class="w3_child1">s</span></h3>
+			<p class="w3_agile_elit">
+			
+Virtual school utilizes survey data to offer courses students are 
+looking for and to customize learning plans for each student.
+ “Virtual Teachers can truly individualize learning based
+ on each student's distinctive needs.
+ Because the students have access to courses 24/7 year round,
+ we aren't prisoners of time.”
+			
+			</p>
+			<div class="agile_work_single_grids">
+				<div class="bs-example bs-example-tabs wthree_example_tab" role="tabpanel" data-example-id="togglable-tabs">
+					<ul id="myTab" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">All</a></li>
+						<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">Category- 1</a></li>
+						<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">Category- 2</a></li>
+						<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">Category- 3</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+							<div class="w3_tab_img agileinfo_img">
+								<div class="col-md-4 w3_tab_img_left">
+									<div class="agileits_demo">
+										<a href="images/new/13.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/13.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span>Learning</span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+									<div class="agileits_demo">
+										<a href="images/new/15.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/15.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span>Training</span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 w3_tab_img_left">
+									<div class="agileits_demo">
+										<a href="images/new/1.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/1.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span>Learning</span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+									<div class="agileits_demo">
+										<a href="images/new/22.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/22.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span>Training</span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 w3_tab_img_left">
+									<div class="agileits_demo">
+										<a href="images/new/12.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/12.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span>Nursery</span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+									<div class="agileits_demo">
+										<a href="images/new/23.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/23.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span>Training</span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="learning" aria-labelledby="learning-tab">
+							<div class="w3_tab_img agileinfo_img">
+								<div class="col-md-4 w3_tab_img_left">
+									<div class="agileits_demo">
+										<a href="images/new/15.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/15.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span> Learning </span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 w3_tab_img_left">
+									<div class="agileits_demo">
+										<a href="images/new/1.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/1.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span>Learning</span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 w3_tab_img_left">
+									<div class="agileits_demo">
+										<a href="images/new/23.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/23.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span> Learning </span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="playing" aria-labelledby="playing-tab">
+							<div class="w3_tab_img agileinfo_img">
+								<div class="col-md-4 w3_tab_img_left">
+									<div class="agileits_demo">
+										<a href="images/new/13.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/13.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span>  Training</span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 w3_tab_img_left">
+									<div class="agileits_demo">
+										<a href="images/new/23.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/23.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span> Learning </span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="painting" aria-labelledby="painting-tab">
+							<div class="w3_tab_img agileinfo_img">
+								<div class="col-md-4 w3_tab_img_left">
+									<div class="agileits_demo">
+										<a href="images/new/1.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/1.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span>Learning</span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 w3_tab_img_left">
+									<div class="agileits_demo">
+										<a href="images/new/22.jpg">
+											<figure class="w3layouts_work">
+												<div class="w3layouts_work_sub">
+													<img src="images/new/22.jpg" alt=" " class="img-responsive" />
+												</div>
+												<figcaption>
+													<span> Training</span>
+												</figcaption>
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //work -->
+
+<!-- contact -->
+	<div id="mail" class="contact">
+		<div class="container">
+			<h3 class="w3_agileits_head">Get In 
+			<span class="w3_child">T</span><span class="w3_child1">
+			o</span><span class="w3_child4">u</span><span class="w3_child2">
+			c</span><span class="w3_child1">h</span></h3>
+			<p class="w3_agile_elit">
+			
+			Quisque dictum elit in nunc malesuada
+			lacinia. Cras id porttitor turpis.
+			
+			</p>
+			<div class="agile_banner_bottom_grids">
+				<div class="col-md-4 w3_agile_contact_grid">
+					<div class="col-xs-4 agile_contact_grid_left">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 agile_contact_grid_right agilew3_contact">
+						<h4>Address</h4>
+						<p>435 City hall, NewYork City SD092.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 w3_agile_contact_grid">
+					<div class="col-xs-4 agile_contact_grid_left agileits_w3layouts_left">
+						<i class="fa fa-mobile" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 agile_contact_grid_right agileits_w3layouts_right">
+						<h4>Phone</h4>
+						<p>+(1234) 2332 232 <span>+(1236) 2334 232</span></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 w3_agile_contact_grid">
+					<div class="col-xs-4 agile_contact_grid_left agileits_w3layouts_left1">
+						 <i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 agile_contact_grid_right agileits_w3layouts_right1">
+						<h4>Email</h4>
+						<p><a href="mailto:info@webschool">info@webschool.com</a>
+							<span><a href="mailto:info@webschool">webschool</a></span></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="agile_banner_bottom_grids">
+				
+			</div>
+		</div>
+	</div>
+<!-- //contact -->
+<!-- footer -->
+	<div class="w3_agileits_twitter_post">
+		<div class="container">
+			<h4>"
+At our  private school our operations function 
+without any other special designation may be categorized as 
+independent. The options are endless.
+			<a href="#">
+				</a> egestas."</h4>
+		</div>
+	</div>
+
+<embed src="asset2/section.html" 
+
+type="text/html"
+title="External Content"
+style="width:100%;height:600px;"
+/>
+		
+<!-- //footer -->
+<!-- contact-effect -->
+<script src="js/classie.js"></script>
+<script>
+	(function() {
+		// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+		if (!String.prototype.trim) {
+			(function() {
+				// Make sure we trim BOM and NBSP
+				var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+				String.prototype.trim = function() {
+					return this.replace(rtrim, '');
+				};
+			})();
+		}
+
+		[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+			// in case the input is already filled..
+			if( inputEl.value.trim() !== '' ) {
+				classie.add( inputEl.parentNode, 'input--filled' );
+			}
+
+			// events:
+			inputEl.addEventListener( 'focus', onInputFocus );
+			inputEl.addEventListener( 'blur', onInputBlur );
+		} );
+
+		function onInputFocus( ev ) {
+			classie.add( ev.target.parentNode, 'input--filled' );
+		}
+
+		function onInputBlur( ev ) {
+			if( ev.target.value.trim() === '' ) {
+				classie.remove( ev.target.parentNode, 'input--filled' );
+			}
+		}
+	})();
+</script>
+<!-- //contact-effect -->
+<!-- work -->
+	<script type="text/javascript"  src="js/jquery.gallery.js" ></script>
+	<script>
+		$(function() {
+			$('.w3_tab_img').createSimpleImgGallery();
+		});
+	</script>
+<!-- //work -->
+<!-- flexisel -->
+	<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: { 
+					portrait: { 
+						changePoint:480,
+						visibleItems: 1
+					}, 
+					landscape: { 
+						changePoint:640,
+						visibleItems:3
+					},
+					tablet: { 
+						changePoint:768,
+						visibleItems: 3
+					}
+				}
+			});
+			
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+<!-- //flexisel -->
+<!-- team-slider -->
+	<script type="text/javascript" src="js/jquery.glide.js"></script>
+	<script type="text/javascript">
+		var glide = $('.w3_slider').glide().data('api_glide');
+
+			$(window).on('keyup', function (key) {
+				if (key.keyCode === 13) {
+					glide.jump(3, console.log('Wooo!'));
+				};
+			});
+	</script>
+<!-- //team-slider -->
+<!-- responsive-tabs -->
+	<script src="js/easy-responsive-tabs.js"></script>
+	<script>
+		$(document).ready(function () {
+		$('#verticalTab').easyResponsiveTabs({
+		type: 'vertical',
+		width: 'auto',
+		fit: true
+		});
+		});
+	</script>
+<!-- //responsive-tabs -->	
+<!-- text-effect -->
+		<script type="text/javascript" src="js/jquery.transit.js"></script> 
+		<script type="text/javascript" src="js/jquery.textFx.js"></script> 
+		<script type="text/javascript">
+			$(document).ready(function() {
+					$('.test2').textFx({
+						type: 'slideIn',
+						direction: 'right',
+						iChar: 250,
+						iAnim: 1000
+					});
+			});
+		</script>
+<!-- //text-effect -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+	
+	<!-- move to top-js-files -->
+	<script type="text/javascript" src="assets/js/move-top.js"></script>
+	<script type="text/javascript" src="assets/js/easing.js"></script>
+	<!-- //move to top-js-files -->
+<script type="text/javascript" src="assets/js/bootstrap-3.1.1.min.js"></script><!-- bootstrap js file -->
+	
+	
+<!-- //for bootstrap working -->
+</body>
+</html>
